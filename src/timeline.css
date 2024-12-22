@@ -1,0 +1,53 @@
+.timeline-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-details {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.timeline-events {
+  position: relative;
+  height: 100px;
+  overflow-x: auto;
+}
+
+.timeline-event-group {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.timeline-event {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #007bff;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timeline-event.important {
+  border: 2px solid #ff4500;
+}
+
+.timeline-event-group:not(.expanded) .timeline-event:not(.visible) {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.timeline-event-group.expanded .timeline-event {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.timeline-event:hover {
+  transform: scale(1.2);
+}
+

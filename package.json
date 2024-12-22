@@ -1,0 +1,18 @@
+{
+  "name": "quartz-timeline",
+  "version": "1.0.0",
+  "description": "A simple timeline component for Quartz blogs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc && cp src/timeline.css dist/",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["timeline", "quartz", "blog"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}
+
